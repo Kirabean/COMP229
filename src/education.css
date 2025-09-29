@@ -1,0 +1,74 @@
+
+/* Unified dark card style for Education page */
+.education-container {
+    background-color: rgba(35, 39, 47, 0.6);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 2.5rem 2rem;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    color: #e6e6e6;
+    border: 1px solid #353a45;
+    position: relative;
+    z-index: 1;
+}
+.education-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #4fd1c5;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    margin-top: 2.5rem;
+    position: relative;
+}
+.timeline-item {
+    background-color: rgba(53, 58, 69, 0.2);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    position: relative;
+}
+.timeline-dot {
+    width: 18px;
+    height: 18px;
+    background: #4fd1c5;
+    border-radius: 50%;
+    border: 3px solid #23272f;
+    box-shadow: 0 0 0 2px #353a45;
+    margin-top: 4px;
+}
+.timeline-content {
+    flex: 1;
+    background: transparent;
+    padding: 0;
+    color: #e6e6e6;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    margin-bottom: 0.2em;
+}
+.degree {
+    font-weight: bold;
+    color: #4fd1c5;
+    font-size: 1.1rem;
+    margin-bottom: 0.2em;
+}
+.school {
+    color: #1976d2;
+    font-weight: 500;
+    margin-bottom: 0.2em;
+}
+.years {
+    font-size: 0.95em;
+    color: #eeeeee;
+}
