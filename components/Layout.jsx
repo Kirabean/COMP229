@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <>
       <header>
-        <a href="/"><img className="logo" src="/YasserNabi.png" alt="Description of image" width="400" height="500"/></a>
+        <a href="/"><img className="logo" src="public/YasserNabi.png" alt="Description of image" width="400" height="500"/></a>
         <nav>
           <Link to="/">Home</Link> | <Link to="/about">About</Link> | {" "}
           <Link to="/education">Education</Link> | {" "}
