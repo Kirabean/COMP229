@@ -22,9 +22,6 @@ export default function Home() {
           AVAILABLE FOR WORK<span>SEPT'25</span>
         </p>
         <div className="home-btns">
-                      <div className="project-button">
-              <button onClick={() => window.open("https://studentweb.cencol.ca/ynabi/comp125/Assignment4/PartB/partb.html")}>Live Demo</button>
-            </div>
           <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/about")}>About me</button>
           <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/project")}>My Projects</button>
         </div>
