@@ -6,7 +6,7 @@ export default function About() {
       <div className="about-left">
         <img
           className="about-image-large"
-          src="/headshot2.jpg"
+          src="public/headshot2.jpg"
           alt="Yaser Nabi"
           width="340"
           height="440"
