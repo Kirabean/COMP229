@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="home-main-card">
       <div className="home-left">
-        <img src="public/HEADSHOT.jpg" alt="Profile" className="home-profile-img" />
+        <img src="/headshot.jpg" alt="Profile" className="home-profile-img" />
         <h2 className="home-name">Yasser Nabi</h2>
         <p className="home-role">Software Developer</p>
         <p className="home-location">Toronto, Canada</p>
