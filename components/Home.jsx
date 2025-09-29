@@ -6,7 +6,7 @@ export default function Home() {
         <h2 className="home-name">Yasser Nabi</h2>
         <p className="home-role">Software Developer</p>
         <p className="home-location">Toronto, Canada</p>
-        <button className="home-contact-btn" onClick={() => window.location.href = "/Contact"}>Contact me</button>
+        <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/contact")}>Contact me</button>
       </div>
       <div className="home-right">
         <h2>Welcome to my Portfolio</h2>
@@ -22,8 +22,11 @@ export default function Home() {
           AVAILABLE FOR WORK<span>SEPT'25</span>
         </p>
         <div className="home-btns">
-          <button className="home-contact-btn" onClick={() => window.location.href = "/about"}>About me</button>
-          <button className="home-contact-btn" onClick={() => window.location.href = "/project"}>My Projects</button>
+                      <div className="project-button">
+              <button onClick={() => window.open("https://studentweb.cencol.ca/ynabi/comp125/Assignment4/PartB/partb.html")}>Live Demo</button>
+            </div>
+          <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/about")}>About me</button>
+          <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/project")}>My Projects</button>
         </div>
       </div>
     </div>
