@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="home-main-card">
@@ -6,7 +9,9 @@ export default function Home() {
         <h2 className="home-name">Yasser Nabi</h2>
         <p className="home-role">Software Developer</p>
         <p className="home-location">Toronto, Canada</p>
-        <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/contact")}>Contact me</button>
+        <Link to="/contact">
+          <button className="home-contact-btn">Contact me</button>
+        </Link>
       </div>
       <div className="home-right">
         <h2>Welcome to my Portfolio</h2>
@@ -22,8 +27,12 @@ export default function Home() {
           AVAILABLE FOR WORK<span>SEPT'25</span>
         </p>
         <div className="home-btns">
-          <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/about")}>About me</button>
-          <button className="home-contact-btn" onClick={() => window.open("https://comp-229-chi.vercel.app/project")}>My Projects</button>
+          <Link to="/about">
+            <button className="home-contact-btn">About me</button>
+          </Link>
+          <Link to="/project">
+            <button className="home-contact-btn">My Projects</button>
+          </Link>
         </div>
       </div>
     </div>
