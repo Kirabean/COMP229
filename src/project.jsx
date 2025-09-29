@@ -6,7 +6,7 @@ export default function Project() {
       <div className="project-container-grid">
         <div className="project-item">
           <div className="project-image">
-            <img src="public/WordCloud.png" alt="Wikipedia Word Cloud" />
+            <img src="/WordCloud.png" alt="Wikipedia Word Cloud" />
           </div>
           <div className="project-description">
             <h3>Wikipedia Word Cloud</h3>
@@ -24,7 +24,7 @@ export default function Project() {
         </div>
         <div className="project-item">
           <div className="project-image">
-            <img src="public/Homelab.png" alt="Homelab Server" />
+            <img src="/Homelab.png" alt="Homelab Server" />
           </div>
           <div className="project-description">
             <h3>Personal Homelab Server</h3>
@@ -41,7 +41,7 @@ export default function Project() {
         </div>
         <div className="project-item">
           <div className="project-image">
-            <img src="public/BugCatch.png" alt="Bug Catcher Game" />
+            <img src="/BugCatch.png" alt="Bug Catcher Game" />
           </div>
           <div className="project-description">
             <h3>Bug Catcher Game</h3>
