@@ -6,12 +6,9 @@ export default function Home() {
         <h2 className="home-name">Yasser Nabi</h2>
         <p className="home-role">Software Developer</p>
         <p className="home-location">Toronto, Canada</p>
-        <button className="home-contact-btn" onClick={() => window.location.href = "/contact"}>Contact me</button>
-        <div className="home-socials">
-          <a href="https://github.com/yasernabi" target="_blank" rel="noopener" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/yasernabi" target="_blank" rel="noopener" aria-label="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:ynabi@my.centennialcollege.ca" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
-        </div>
+        <Link to="/Contact">
+          <button className="home-contact-btn">Contact me</button>
+        </Link>
       </div>
       <div className="home-right">
         <h2>Welcome to my Portfolio</h2>
@@ -27,8 +24,13 @@ export default function Home() {
           AVAILABLE FOR WORK<span>SEPT'25</span>
         </p>
         <div className="home-btns">
-          <button className="home-contact-btn" onClick={() => window.location.href = "/about"}>About me</button>
-          <button className="home-contact-btn" onClick={() => window.location.href = "/project"}>My Projects</button>
+          import { Link } from 'react-router-dom';
+          <Link to="/about">
+            <button className="home-contact-btn">About me</button>
+          </Link>
+          <Link to="/project">
+            <button className="home-contact-btn">My Projects</button>
+          </Link>
         </div>
       </div>
     </div>
