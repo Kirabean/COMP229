@@ -6,6 +6,9 @@ import cors from 'cors'
 import helmet from 'helmet'
 import userRoutes from './routes/user.routes.js'
 import authRoutes from './routes/auth.routes.js'
+import contactRoutes from './routes/contact.routes.js'
+import eduRoutes from './routes/edu.routes.js'
+import projectRoutes from './routes/project.routes.js'
 
 const app = express()
 
@@ -20,6 +23,9 @@ app.use(cors())
 
 app.use('/', userRoutes)
 app.use('/', authRoutes)
+app.use('/', contactRoutes)
+app.use('/', eduRoutes)
+app.use('/', projectRoutes)
 
 // handle unauthorized or other errors
 app.use((err, req, res, next) => {

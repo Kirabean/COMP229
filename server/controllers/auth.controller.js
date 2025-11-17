@@ -13,7 +13,7 @@ const signin = async (req, res) => {
       return res.status(401).send({ error: "Email and password don't match." })
     }
 
-    const token = jwt.sign({ _id: user._id }, config.jwtSecret)
+    const token = jwt.sign({ _id: user._id, role: user.role }, config.jwtSecret)
     res.cookie('t', token, { expire: new Date() + 9999 })
 
     return res.json({
@@ -21,7 +21,8 @@ const signin = async (req, res) => {
       user: {
         _id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        role: user.role
       }
     })
   } catch (err) {
@@ -41,11 +42,22 @@ const requireSignin = expressjwt({
 })
 
 const hasAuthorization = (req, res, next) => {
-  const authorized = req.profile && req.auth && req.profile._id == req.auth._id
+  const isOwner = req.profile && req.auth && req.profile._id == req.auth._id
+  const isAdmin = req.auth && req.auth.role === 'admin'
+  const authorized = isOwner || isAdmin
+  
   if (!authorized) {
     return res.status(403).json({ error: "User is not authorized" })
   }
   next()
 }
 
-export default { signin, signout, requireSignin, hasAuthorization }
+const hasAdminRole = (req, res, next) => {
+  const isAdmin = req.auth && req.auth.role === 'admin'
+  if (!isAdmin) {
+    return res.status(403).json({ error: "Admin access required" })
+  }
+  next()
+}
+
+export default { signin, signout, requireSignin, hasAuthorization, hasAdminRole }

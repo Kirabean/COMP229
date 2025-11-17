@@ -2,7 +2,9 @@ const config = {
 env: process.env.NODE_ENV || 'development',
 port: process.env.PORT || 3000,
 jwtSecret: process.env.JWT_SECRET || "YOUR_secret_key",
-mongoUri: process.env.MONGODB_URI || "mongodb+srv://yasernabi110_db_user:8ymGq76fG5oK3lzD@inclasscluster.bsuhgkz.mongodb.net/?retryWrites=true&w=majority&appName=InClassCluster" ||
+mongoUri: process.env.MONGODB_URI || 
+  "mongodb://localhost:27017/Portfolio" ||
+  "mongodb+srv://yasernabi110_db_user:8ymGq76fG5oK3lzD@inclasscluster.bsuhgkz.mongodb.net/Portfolio?retryWrites=true&w=majority&appName=InClassCluster" ||
 process.env.MONGO_HOST ||
 'mongodb://' + (process.env.IP || 'localhost') + ':' +
 (process.env.MONGO_PORT || '27017') +
